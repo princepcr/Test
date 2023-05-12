@@ -45,8 +45,7 @@ public class Test1 {
 	        }
 		
 		//Store all Perfume Names under 'Top Picks for You' section
-		//List<WebElement> perfumeNames = driver.findElements(By.xpath("//div[@id='recommended-items' and @class='serif h3']"));
-		  List<WebElement> perfumeNames = driver.findElements(By.className("//div[@id='recommended-items' and @class='serif h3']"));
+		List<WebElement> perfumeNames = driver.findElements(By.xpath("//div[@id='recommended-items' and @class='serif h3']"));
 
         System.out.println("Perfume Names under Top Picks For You:");
         for (WebElement perfume : perfumeNames) {
